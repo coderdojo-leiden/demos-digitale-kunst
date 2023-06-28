@@ -1,6 +1,6 @@
 # DEMO 9 - Diversen
 
-## Laag kopieren
+## Laag kopiëren
 
 Laten we onze tekst een schaduw geven. Vervang de `Tekst`-laag door:
 
@@ -14,7 +14,7 @@ laag(Verplaats)
 wijzig("pad", pad.xy(10, 10))
 ```
 
-Zo maken we een witte tekst met zwarte schaduw. Zie je dat we een laag exact kunnen kopieren met `kopieer_laag()`? Alle eigenschappen en effecten worden meegekopieerd.
+Zo maken we een witte tekst met zwarte schaduw. Zie je dat we een laag exact kunnen kopiëren met `kopieer_laag()`? Alle eigenschappen en effecten worden meegekopieerd.
 
 
 
@@ -63,7 +63,7 @@ Je kunt wijzigingen in je code ongedaan maken met <kbd>Ctrl+Z</kbd>: Houd <kbd>C
 
 ### Kopieren en plakken
 
-Gebruik kopieren en plakken om code over te nemen: selecteer de code die je wilt overnemen met de muis, druk dan <kbd>Ctrl+C</kbd> (kopieren), klik dan in je programma op de plek waar je de code wilt hebben en druk <kbd>Ctrl+V</kbd> (plakken).
+Gebruik kopiëren en plakken om code over te nemen: selecteer de code die je wilt overnemen met de muis, druk dan <kbd>Ctrl+C</kbd> (kopieren), klik dan in je programma op de plek waar je de code wilt hebben en druk <kbd>Ctrl+V</kbd> (plakken).
 
 ### Replit console verbergen of tonen
 

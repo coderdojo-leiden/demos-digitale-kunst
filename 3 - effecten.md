@@ -1,5 +1,25 @@
 # DEMO 3 - Effecten
 
+<blockquote>
+<details>
+  <summary><u><b>TIP:</b> zo zou je project er nu uit moeten zien</u></summary>
+
+(andere kleuren, teksten of vormen zijn natuurlijk geen probleem)
+
+```js
+laag(Achtergrond)
+wijzig("kleur", "donkergroen")
+
+laag(Vorm)
+wijzig("vorm", vorm.cirkel())
+
+laag(Tekst)
+wijzig("tekst", "Coding is cool!")
+```
+
+</details>
+</blockquote>
+
 ## Effecten
 
 Onze demo wordt een stuk leuker met beweging! Laten we kijken hoe we een laag kunnen verplaatsen, draaien en van grootte veranderen.

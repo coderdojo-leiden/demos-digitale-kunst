@@ -3,7 +3,7 @@
 class Achtergrond {
 
   constructor() {
-    this.kleur = kleur.code("#000044")
+    this.kleur = kleur.code("donkerblauw")
   }
 
   teken() {
@@ -18,7 +18,7 @@ class Lijnen {
 
   constructor() {
     this.kleur = kleur.hsb()
-    this.kleurverloop = getal.vast(0)
+    this.kleurvariatie = getal.vast(10)
     this.dikte = getal.vast(8)
     this.afstand = getal.vast(40)
   }
@@ -31,7 +31,7 @@ class Lijnen {
     let dt = 0
     while (y <= ONDER * overloop) {
       stroke(this.kleur(dt))
-      dt += this.kleurverloop() / 100
+      dt += this.kleurvariatie() / 100
 
       // Teken horizontale lijn
       line(LINKS * overloop, y, RECHTS * overloop, y)
@@ -49,6 +49,42 @@ class Lijnen {
   }
 }
 
+// Vul het scherm met parallelle lijnen
+class Cirkels {
+
+  constructor() {
+    this.kleur = kleur.hsb()
+    this.kleurvariatie = getal.vast(10)
+    this.dikte = getal.vast(8)
+    this.afstand = getal.vast(40)
+  }
+
+  teken() {
+    // Zet de juiste kleur en lijndikte
+    strokeWeight(this.dikte())
+    stroke(this.kleur())
+    noFill()
+    const stap = this.afstand()
+
+    // Teken de cirkels wat groter dan het scherm, omdat we ze ook gaan draaien/verplaatsen
+    const overloop = 3
+
+    let grootte = stap
+    let dt = 0
+    while (grootte < RECHTS * overloop) {
+      stroke(this.kleur(dt))
+      dt += this.kleurvariatie() / 100
+
+      // Teken horizontale lijn
+      circle(0, 0, grootte)
+
+      // Door naar de volgende
+      grootte += stap
+    }
+
+  }
+}
+
 
 // Base class voor een effect dat op de laatst toegevoegde laag werkt
 class LaagEffect  {
@@ -61,15 +97,14 @@ class LaagEffect  {
   }
 }
 
-
 // Teken een laag meerdere keren
 class Vermenigvuldig extends LaagEffect {
 
   constructor() {
     super()
-    this.duur = getal.vast(2)  // hoeveel wijzigt de vormgrootte van vorm naar vorm?
     this.aantal = getal.vast(7)
     this.afstand = getal.vast(200)
+    this.variatie = getal.vast(20)  // hoeveel wijzigt de vormgrootte van vorm naar vorm?
     // @@@ meerdere concentrische cirkels?
   }
   
@@ -78,7 +113,7 @@ class Vermenigvuldig extends LaagEffect {
       return
     let i = 0
     const n = floor(this.aantal())
-    const d = this.duur()
+    const d = this.variatie() / 10
     while (i < n) {
       const hoek = i * (360 / n)
       const dt = i / n * d
@@ -132,7 +167,7 @@ class Verplaats extends LaagEffect {
   constructor() {
     super()
     this.laag = undefined
-    this.pad = pad.geen()
+    this.pad = pad.cirkel()
   }
 
   init(lagen) {
@@ -165,7 +200,7 @@ class Draai extends LaagEffect {
   constructor() {
     super()
     this.laag = undefined
-    this.hoek = getal.golf2()
+    this.hoek = getal.golf()
   }
 
   init(lagen) {

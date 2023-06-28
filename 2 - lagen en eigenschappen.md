@@ -1,5 +1,6 @@
 # DEMO 2 - Lagen en eigenschappen
 
+
 ## Lagen
 
 Een demo bestaat uit lagen, bijvoorbeeld:
@@ -36,6 +37,11 @@ Wat verandert er?
 Probeer andere kleuren! Je kunt een naam opgeven (`"lichtblauw"`), een getal van 0 tot 100 (`0` is bijvoorbeeld rood, `20` is geel, enz.).
 
 Kun je de `Vorm` en `Tekst` lagen ook andere kleuren geven?
+
+Wat gebeurt er als je als kleur `kleur.regenboog()` gebruikt (zonder aanhalingstekens!)? En `kleur.regenboog(10)`?
+
+> **TIP:** Als er iets misgaat, kun je je laatste wijzigingen ongedaan maken met <kbd>Ctrl+Z</kbd>: houd <kbd>Ctrl</kbd> ingedrukt en druk (een paar keer) op <kbd>Z</kbd>.
+
 
 
 ## Andere eigenschappen wijzigen

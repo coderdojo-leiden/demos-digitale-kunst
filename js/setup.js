@@ -66,8 +66,9 @@ snelheid = 1.0
 // Wordt elk frame aangeroepen
 function draw() {
   // Zet de variable tijd op de huidige tijd
-  if (!gepauzeerd)
+  if (!gepauzeerd) {
     tijd += snelheid/60 //millis() / 1000
+  }
 
   // Schaal alles zodat we van -500 tot 500 werken
   // (of iets meer in 1 richting, omdat we de aspect ratio behouden)
@@ -111,25 +112,42 @@ function keyTyped(event) {
   switch (event.key) {
   case ' ':
     gepauzeerd = !gepauzeerd
+    if (snelheid === 0) {
+      snelheid = 1
+      gepauzeerd = false
+    }
     break
   case '.': case '>':
+    if (gepauzeerd) {
+      gepauzeerd = false
+      snelheid = 1
+      break
+    }
     snelheid++
     if (snelheid > 5)
       snelheid = 5
     console.log(`snelheid = ${snelheid}`)
     break
   case ',': case '<':
+    if (gepauzeerd) {
+      gepauzeerd = false
+      snelheid = -1
+    }
     snelheid--
     if (snelheid < -5)
       snelheid = -5
     console.log(`snelheid = ${snelheid}`)
     break
   case '-':
-    DEBUG_PLOT = !DEBUG_PLOT
-    saveVar('DEBUG_PLOT', DEBUG_PLOT);
-    console.log(`DEBUG_PLOT = ${DEBUG_PLOT}`)
+    setDebugPlot(!DEBUG_PLOT)
     break
   }
+}
+
+function setDebugPlot(b) {
+  DEBUG_PLOT = b
+  saveVar('DEBUG_PLOT', DEBUG_PLOT);
+  console.log(`DEBUG_PLOT = ${DEBUG_PLOT}`)
 }
 
 function keyPressed(event) {
@@ -142,6 +160,7 @@ function keyPressed(event) {
     }
     snelheid = 1.0
     gepauzeerd = false
+    setDebugPlot(false)
     return false;
   }
   if (event.code.substr(0, 5) === 'Digit') {
@@ -239,12 +258,23 @@ const kleur = {
   },
   regenboog(duur = 100, start = 0, doorzichtigheid = 0, sat = 100, val = 100) {
     function _regenboog(duur, start, doorzichtigheid, sat, val) {
-      _tint = ((tijd + start) * 100 / duur) % 100
+      _tint = ((tijd + start + 100000) * 100 / duur) % 100
       return color(_tint, sat, val, 100 - doorzichtigheid)
     }
     duur /= 10
     return (dt=0) => {
       return _regenboog(duur, start + dt, doorzichtigheid, sat, val)
+    }
+  },
+  willekeurig(d = 10) {
+    d /= 10
+    return (dt=0) => {
+      const t = tijd + dt;
+      randomSeed(floor(t / d))
+      colorMode(RGB, 100)
+      const c = color(random(100), random(100), random(100))
+      colorMode(HSB, 100)
+      return c
     }
   },
   doorzichtig(kleur, doorzichtigheid = 50) {
