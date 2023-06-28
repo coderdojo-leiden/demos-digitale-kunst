@@ -4,9 +4,9 @@
 <details>
   <summary><u><b>TIP:</b> zo zou je project er nu uit moeten zien</u></summary>
 
-(andere kleuren, teksten of vormen zijn natuurlijk geen probleem)
+<p>(andere kleuren, teksten of vormen zijn natuurlijk geen probleem)</p>
 
-```js
+<pre>
 laag(Achtergrond)
 wijzig("kleur", "donkergroen")
 
@@ -15,7 +15,7 @@ wijzig("vorm", vorm.cirkel())
 
 laag(Tekst)
 wijzig("tekst", "Coding is cool!")
-```
+</pre>
 
 </details>
 </blockquote>
@@ -109,8 +109,8 @@ wijzig("grootte", 120)
 
 Wat is het verschil? Snap je waarom?
 
-> *TIP:* Druk eens op de <kbd>-</kbd> toets! De `Verplaats` effecten zie je dan als lijnen.
+> **TIP:** Druk eens op de <kbd>-</kbd> toets! De `Verplaats` effecten zie je dan als lijnen.
 
 Als meerdere effecten niet precies doen wat je verwacht, probeer dan dus eens een andere volgorde!
 
-Bij de volgende stap leer je wat je allemaal kunt tekenen, en wat voor effecten je kunt bereiken: [Demo 4 - meer mogelijkheden](./4%20-%20meer%20mogelijkheden.md)
+Bij de volgende stap gaan we onze vorm vermenigvuldigen: [Demo 4 - vermenigvuldig](./4%20-%20vermenigvuldig.html)

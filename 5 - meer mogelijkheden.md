@@ -227,6 +227,7 @@ Deze paden leveren verschillende bewegingen op.
 | `pad.lissa(20, 30)`   | De eerste twee getallen bepalen het pad en de snelheid. Kleinere getallen leveren snellere beweging op. |
 | `pad.x(getal.golf())` | Golft naar links en rechts                                                                              |
 | `pad.y(getal.golf())` | Golft omhoog en omlaag                                                                                  |
+
 ## Lettertypes
 
 Probeer deze lettertypes bij `Tekst` en `Tekstrol`:

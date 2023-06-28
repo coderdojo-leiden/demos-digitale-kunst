@@ -31,4 +31,4 @@ Je kunt ook het programma [Visual Studio Code](https://code.visualstudio.com/dow
 </details>
 </blockquote>
 
-Werkt het? Mooi! Laten we dan echt aan de slag gaan, met [lagen en eigenschappen](2%20-%20lagen%20en%20eigenschappen.md)!
+Werkt het? Mooi! Laten we dan echt aan de slag gaan, met [lagen en eigenschappen](2%20-%20lagen%20en%20eigenschappen.html)!

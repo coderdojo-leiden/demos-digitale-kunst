@@ -4,9 +4,9 @@
 <details>
   <summary><u><b>TIP:</b> zo zou je project er nu bijvoorbeeld uit kunnen zien</u></summary>
 
-(als jouw versie ietsje anders is: geen probleem, als je maar een `Vorm` laag hebt voor deze stap)
+<p>(als jouw versie ietsje anders is: geen probleem, als je maar een `Vorm` laag hebt voor deze stap)</p>
 
-```js
+<pre>
 laag(Achtergrond)
 wijzig("kleur", "donkergroen")
 
@@ -21,7 +21,7 @@ laag(Draai)
 wijzig("hoek", getal.golf(20, 50))
 laag(Grootte)
 wijzig("grootte", 120)
-```
+</pre>
 
 </details>
 </blockquote>
@@ -65,7 +65,7 @@ Nu zijn alle vormen als het goed is hetzelfde. Je kunt voor de `variatie` ook an
 We hebben nu de vorm in grootte laten veranderen, maar je kunt ook andere dingen aanpassen voor leuke effecten:
 
 - Je kunt de kleur van de `Vorm` laag op `kleur.regenboog()` of `kleur.willekeurig()` zetten.
-- Je kunt ook de `"afstand"` van de `Vermenigvuldig` wijzigen naar `getal.golf(10, 150, 250)`. Gek effect hè?
+- Je kunt ook de `"afstand"` eigenschap van `Vermenigvuldig` wijzigen naar `getal.golf(10, 150, 250)`. Gek effect hè?
+- Je kunt de `aantal` eigenschap bij `Vermenigvuldig` laten veranderen met `getal.golf(5, 3, 10)`.
 
-Experimenteer nu zelf verder. Gebruik het [overzicht](./5%20-%20meer%20mogelijkheden.md) in de volgende stap om te zien wat je allemaal kunt doen. Er staan ook vast een paar suggesties.
-
+Experimenteer zelf verder! Gebruik het [overzicht in de volgende stap](./5%20-%20meer%20mogelijkheden.html) om te zien wat je allemaal kunt doen.
