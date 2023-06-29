@@ -8,7 +8,7 @@ laag(Achtergrond)
 wijzig("kleur", "lichtblauw")
 
 laag(Vorm)
-wijzig("vorm", vorm.ster())
+wijzig("vorm", vorm.ster(5, 200))
 wijzig("kleur", "zwart")
 laag(Grootte)
 wijzig("grootte", getal.golf(20, 50, 150))
