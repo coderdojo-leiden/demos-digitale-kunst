@@ -56,7 +56,9 @@ wijzig("vorm", vorm.cirkel())
 
 Let op waar je deze regel plaatst! Zet `wijzig` altijd *na* de `laag` die je wilt wijzigen.
 
-Je kunt ook `vorm.driehoek()` of `vorm.vierkant()` als vorm gebruiken.
+Er zijn ook andere vormen:
+
+![vormen](./images/vormen.png)
 
 Natuurlijk kun je de tekst aanpassen:
 

@@ -492,7 +492,7 @@ const pad = {
     func = echtEenFunctie(func)
     return (dt=0) => [func(dt), 0]
   },
-  links(x) {
+  links(func) {
     func = echtEenFunctie(func)
     return (dt=0) => [-func(dt), 0]
   },
@@ -567,6 +567,35 @@ const vorm = {
   veelhoek(hoeken = 5, grootte = 100) {
     hoeken = echtEenFunctie(hoeken)
     return (dt=0) => polygon(0, 0, grootte, hoeken(dt))
+  },
+  zon(grootte = 100) {
+    return vorm.ster(18, grootte)
+  },
+  ster(hoeken = 5, grootte = 100) {
+    hoeken = echtEenFunctie(hoeken)
+    return (dt=0) => {
+      const hoek = TWO_PI / hoeken(dt)
+      beginShape()
+      for (let i = 0; i < hoeken(dt); i++) {
+        const x = cos(-PI/2 + i * hoek) * grootte
+        const y = sin(-PI/2 + i * hoek) * grootte
+        vertex(x, y)
+        const x2 = cos(-PI/2 + (i + 0.5) * hoek) * grootte * 0.4
+        const y2 = sin(-PI/2 + (i + 0.5) * hoek) * grootte * 0.4
+        vertex(x2, y2)
+      }
+      endShape(CLOSE)
+    }
+  },
+  hart(grootte = 100) {
+    return (dt=0) => {
+      const x = 0, y = -grootte * 0.4;
+      beginShape();
+      vertex(x, y);
+      bezierVertex(x - grootte / 2, y - grootte / 2, x - grootte, y + grootte / 3, x, y + grootte);
+      bezierVertex(x + grootte, y + grootte / 3, x + grootte / 2, y - grootte / 2, x, y);
+      endShape(CLOSE);
+    }
   },
   wissel(duur = 10, ...vormen) {
     vormen = vormen.map(k => echtEenFunctie(k, 'vorm'))
@@ -666,3 +695,6 @@ function echtEenGetal(n) {
   return typeof n === "number" ? n : 0;
 }
 
+function muziek(id) {
+  document.getElementById("musicframe").src = `https://www.youtube.com/embed/${id}?autoplay=1`
+}

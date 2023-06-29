@@ -1,12 +1,11 @@
 # DEMO 5 - (Veel) meer mogelijkheden
 
-Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je nu een nieuwe teken-laag toevoegen, een aantal eigenschappen wijzigen, en 1 of meer effect-lagen zoals `Draai`, `Verplaats` en `Grootte` toevoegen.
+Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je nu zelf nieuwe teken-lagen toevoegen, eigenschappen wijzigen, en effect-lagen zoals `Draai`, `Verplaats` en `Grootte` toevoegen.
 
 Hieronder staan een heleboel mogelijkheden uitgelegd. Kies iets wat er leuk uitziet, probeer het uit en maak iets moois!
 
 Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
 
-Hier staan (bijna) alle mogelijkheden uitgelegd:
 - [Teken-lagen](#teken-lagen)
 - [Effect-lagen](#effect-lagen)
 - [Getallen](#getallen)
@@ -15,13 +14,15 @@ Hier staan (bijna) alle mogelijkheden uitgelegd:
 - [Paden](#paden)
 - [Lettertypes](#lettertypes)
 - [Plaatjes](#plaatjes)
+- [Kopie van een laag maken](#kopie-van-een-laag-maken)
+- [Lagen groeperen](#muziek)
+- [Muziek](#muziek)
 - [Toetsen tijdens de demo](#toetsen-tijdens-de-demo)
 - [Zomaar een paar ideetjes](#zomaar-een-paar-ideetjes)
 
 ## Teken-lagen
 
-We hebben al de lagen `Achtergrond`, `Vorm` en `Tekst` gezien, maar er zijn er meer.
-Hieronder zie je ze allemaal, plus welke eigenschappen je kunt wijzigen.
+Deze lagen tekenen iets. Daarna kun je er effect-lagen op toepassen. Er zijn er heel wat; hier staan ze allemaal, en welke eigenschappen je kunt wijzigen.
 
 **LET OP:** alle teken-lagen hebben een eigenschap `kleur`, dus die noemen we niet meer.
 
@@ -75,13 +76,14 @@ Deze hebben we ook al gezien, maar hier zijn ze nog een keer:
 
 ## Getallen
 
-Overal waar je hierboven een getal moet invoeren, kun je kiezen uit deze mogelijkheden.
+Op de meeste plekken waar je een getal moet zetten, kun je kiezen uit al deze mogelijkheden.
 
 ### Vast getal
 
 | **Naam**                       | **Beschrijving**                                                 |
 |:-------------------------------|:-----------------------------------------------------------------|
 | `1` of `100` of `-10`          | Een getal dat niet verandert                                     |
+
 
 ### Golf
 
@@ -95,6 +97,7 @@ Overal waar je hierboven een getal moet invoeren, kun je kiezen uit deze mogelij
 | `getal.golf(50, 100, 200)`     | Golft precies tussen `100` en `200`                              |
 | `getal.golf(50, 100, 200, 25)` | Zoals de vorige, maar verschoven (de golf begint halverwege)     |
 
+
 ### Zigzag
 
 | **Naam**                       | **Beschrijving**                                                 |
@@ -104,6 +107,7 @@ Overal waar je hierboven een getal moet invoeren, kun je kiezen uit deze mogelij
 | `getal.zigzag(50)`             | Snellere zigzag                                                  |
 | `getal.zigzag(50)`             | Snellere zigzag                                                  |
 
+
 ### Puls
 
 | **Naam**                       | **Beschrijving**                                                 |
@@ -112,7 +116,10 @@ Overal waar je hierboven een getal moet invoeren, kun je kiezen uit deze mogelij
 | `getal.puls(200)`              | Langzamere puls                                                  |
 | `getal.puls(50)`               | Snellere puls                                                    |
 
+
 ### Teller
+
+Een teller telt van het ene naar het andere getal, en begint dan weer opnieuw.
 
 | **Naam**                   | **Beschrijving**       |
 |:---------------------------|:-----------------------|
@@ -122,9 +129,11 @@ Overal waar je hierboven een getal moet invoeren, kun je kiezen uit deze mogelij
 | `getal.teller(50, 0, 360)` | Telt van `0` tot `360` |
 | `getal.teller(50, 360, 0)` | Telt van `360` tot `0` |
 
+
 ## Kleuren
 
-Overal waar je hierboven een kleur moet invoeren, kun je kiezen uit deze mogelijkheden.
+Er zijn een hoop manieren om (veranderende) kleuren in te voeren!
+
 
 ### Vaste kleur
 
@@ -138,6 +147,7 @@ Deze kleuren verandering niet met de tijd.
 | `kleur.rgb(0, 100, 0)`  | Een kleur opgebouwd uit (R)ood, (G)roen en (B)lauw. Dit is puur groen.                                                         |
 | `kleur.hsb(20, 50, 50)` | Een kleur opgebouwd uit kleurtint, verzadiging (is de kleur flets of helder?)<br>en intensiteit (is de kleur donker of licht?) |
 
+
 ### Regenboog
 
 Laat alle kleuren van de regenboog voorbijkomen!
@@ -148,6 +158,7 @@ Laat alle kleuren van de regenboog voorbijkomen!
 | `kleur.regenboog(200)` | Langzamere regenboog                    |
 | `kleur.regenboog(50)`  | Snellere regenboog                      |
 
+
 ### Wissel
 
 Je kunt ook wisselen tussen een aantal gekozen kleuren.
@@ -156,6 +167,7 @@ Je kunt ook wisselen tussen een aantal gekozen kleuren.
 |:--------------------------------------------|:-------------------------------------------------------|
 | `kleur.wissel(20, "wit", "zwart")`          | Wisselt elke 2 seconden tussen wit en zwart            |
 | `kleur.wissel(5, "rood", "groen", "blauw")` | Wisselt elke halve seconde tussen rood, groen en blauw |
+
 
 ### Willekeurig
 
@@ -168,18 +180,23 @@ Je kunt ook wisselen tussen een aantal gekozen kleuren.
 
 ## Vormen
 
-Overal waar je hierboven een vorm moet invoeren, kun je kiezen uit deze mogelijkheden.
+Er zijn heel wat vormen, en je kunt zelfs tussen verschillende vormen wisselen!
+
 
 ### Vaste vorm
 
-| **Naam**           | **Beschrijving**                                                  |
-|:-------------------|:------------------------------------------------------------------|
-| `vorm.vierkant()`  | Een vierkant                                                      |
-| `vorm.cirkel()`    | Een cirkel                                                        |
-| `vorm.driehoek()`  | Een driehoek                                                      |
+| **Naam**           | **Beschrijving**                                                    |
+|:-------------------|:--------------------------------------------------------------------|
+| `vorm.vierkant()`  | Een vierkant                                                        |
+| `vorm.cirkel()`    | Een cirkel                                                          |
+| `vorm.driehoek()`  | Een driehoek                                                        |
+| `vorm.hart()`      | Een hart                                                            |
+| `vorm.ster()`      | Een ster met 5 punten                                               |
+| `vorm.ster(6)`     | Een ster met 6 punten                                               |
 | `vorm.veelhoek(5)` | Een vijfhoek (_pentagon_)                                           |
 | `vorm.veelhoek(6)` | Een zeshoek (_hexagon_)                                             |
 | `8`                | Gewoon een getal opgeven werkt ook, dit is een achthoek (_octagon_) |
+
 
 ### Wisselende vorm
 
@@ -187,15 +204,18 @@ Overal waar je hierboven een vorm moet invoeren, kun je kiezen uit deze mogelijk
 |:------------------------------------|:-----------------------------------------------------------|
 | `vorm.wissel(20, vorm.cirkel(), 7)` | Wisselt elke 2 seconden tussen een cirkel en een zevenhoek |
 
+
 ### Veelhoek met een getalfunctie
 
 | **Naam**                                 | **Beschrijving**                              |
 |:-----------------------------------------|:----------------------------------------------|
 | `vorm.veelhoek(getal.teller(100, 3, 8))` | Wat denk je dat dit doet? Probeer het eens... |
 
+
 ## Paden
 
-Overal waar je hierboven een pad moet invoeren, kun je kiezen uit deze mogelijkheden.
+Paden gebruik je bijvoorbeeld bij `Verplaats` om een laag op een andere plek te zetten of te laten bewegen.
+
 
 ### Vaste positie
 
@@ -208,6 +228,7 @@ Een positie die niet verandert. Gebruik dit om een laag op een bepaalde plek op 
 | `pad.links(100)`    | 150 naar links                   |
 | `pad.rechts(100)`   | 150 naar rechts                  |
 | `pad.xy(-100, 150)` | 100 naar links en 150 naar boven |
+
 
 ### Beweging
 
@@ -233,6 +254,7 @@ Probeer deze lettertypes bij `Tekst` en `Tekstrol`:
 - `"handschrift"`
 - `"computer"`
 
+
 ## Plaatjes
 
 In de `plaatjes/` map staan al een paar plaatjes die je kunt gebruiken met de laag `Plaatje` (eigenschap `naam`):
@@ -240,7 +262,61 @@ In de `plaatjes/` map staan al een paar plaatjes die je kunt gebruiken met de la
 - `"logo2.png"`
 - `"logo3.png"`
 
+Als je een plaatje wilt gebruiken, moet je het wel eerst laden. Om bijvoorbeeld twee plaatjes te laden, zet je dit bovenaan je demo:
+
+```js
+laadPlaatjes("logo.png", "logo2.png")
+```
+
 Je kunt ook je eigen plaatje gebruiken: zoek een leuk plaatje, download het en sleep het uit de Download map naar de `plaatjes` map. Vraag het aan een mentor als het niet lukt.
+
+
+## Kopie van een laag maken
+
+Om een kopie te maken van de laag die je net hebt gemaakt (met alle effecten die je hebt toegevoegd):
+
+```js
+kopieer_laag()
+```
+
+De laag en effecten worden precies gekopieerd. Daarna moet je natuurlijk nog een effect toevoegen, anders vallen de twee lagen precies over elkaar heen. Probeer bijvoorbeeld:
+
+```js
+laag(Draai)
+wijzig("hoek", 180)
+```
+
+De kopie staat dan op z'n kop!
+
+
+## Lagen groeperen
+
+Je kunt een aantal lagen groeperen, zodat je ze samen kunt verplaatsen, draaien, vergroten, enzovoort. Gebruik dit commando:
+
+```js
+groepeer_lagen(3)
+```
+
+om de laatste drie teken-lagen die je gemaakt hebt (bijvoorbeeld twee vormen en een tekst) samen te groeperen. Als je daarna een effect toevoegt, geldt dat effect voor alle drie de lagen tegelijk. Bijvoorbeeld:
+
+```js
+laag(Verplaats)
+wijzig("pad", pad.lissa())
+```
+
+
+## Muziek
+
+Om muziek aan je demo toe te voegen: zoek een YouTube-video met muziek die je wilt en kopieer de code achter `v=` in de URL. Bijvoorbeeld: `https://www.youtube.com/watch?v=Uj8MsbgpjaQ` wordt `Uj8MsbgpjaQ`. Gebruik dan commando met deze code om de muziek te starten:
+
+```js
+muziek('Uj8MsbgpjaQ')
+```
+
+Zet wel het geluid zacht of gebruik een koptelefoon.
+
+> **TIP:** zoek naar _chiptune_ voor muziek die goed past bij demo's!
+
 
 ## Toetsen tijdens de demo
 

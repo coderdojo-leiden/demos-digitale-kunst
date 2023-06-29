@@ -46,6 +46,8 @@ Probeer ook andere getallen!
 
 `pad.stuiter()` is maar 1 voorbeeld van een pad. Hoe zien `pad.cirkel()` en `pad.lissa()` er uit? Ook hier kun je getallen aan meegeven om het pad aan te passen.
 
+<iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/"></iframe>
+
 ### Draai
 
 Voeg dit toe na `laag(Tekst)`:
