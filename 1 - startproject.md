@@ -34,5 +34,5 @@ Je kunt ook het programma <a target='_blank' href='https://code.visualstudio.com
 Werkt het? Mooi! Laten we dan echt aan de slag gaan, met [lagen en eigenschappen](2%20-%20lagen%20en%20eigenschappen.html)!
 
 <p style='font-size: 150%; font-weight: bold; text-align: right;'>
-    <a href='./2%20-2%20lagen2%20en2%20eigenschappen.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
+    <a href='./2%20-%20lagen%20en%20eigenschappen.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
 </p>
