@@ -26,7 +26,7 @@ Als je geen Replit account kunt of wilt maken, kun je ook in een teksteditor zoa
 
 Wijzig de code, sla het bestand op (<kbd>Ctrl+S</kbd>), ga naar de webbrowser en herlaad de pagina (<kbd>F5</kbd>).
 
-Je kunt ook het programma <a href='https://code.visualstudio.com/download'>Visual Studio Code</a> gebruiken, met de <a href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Live Server</a> extensie. Vraag aan een mentor hoe dat moet.
+Je kunt ook het programma <a target='_blank' href='https://code.visualstudio.com/download'>Visual Studio Code</a> gebruiken, met de <a target='_blank' href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Live Server</a> extensie. Vraag aan een mentor hoe dat moet.
 
 </details>
 </blockquote>
