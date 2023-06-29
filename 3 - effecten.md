@@ -85,6 +85,8 @@ Het tweede en derde getal (`50` em `150`) zijn de kleinste en grootste waarde wa
 
 Je hoeft al deze getallen niet precies te begrijpen; probeer gewoon verschillende getallen uit tot je tevreden bent met het resultaat!
 
+<iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/grootte/"></iframe>
+
 
 ## Effecten combineren
 

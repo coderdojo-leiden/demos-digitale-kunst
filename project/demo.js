@@ -7,34 +7,43 @@ function maakDemo()
 laag(Achtergrond)
 wijzig("kleur", "wit")
 
-const v = [
-    vorm.driehoek(),
-    vorm.vierkant(),
-    vorm.veelhoek(5),
-    vorm.hart(),
-    vorm.ster(5),
-    vorm.zon()
-];
-const n = [
-    "driehoek()",
-    "vierkant()",
-    "veelhoek(5)",
-    "hart()",
-    "ster(5)",
-    "zon()"
-];
-for (let i = 0; i < v.length; i++) {
-    laag(Vorm)
-    wijzig("vorm", v[i])
-    laag(Tekst)
-    wijzig("kleur", "zwart")
-    wijzig("tekst", n[i])
-    laag(Grootte)
-    wijzig("grootte", 45)
-    groepeer_lagen(2)
-    laag(Verplaats)
-    wijzig("pad", pad.rechts(i * 200 - 600))
-}
+
+laag(Vorm)
+wijzig("vorm", vorm.ster())
+wijzig("kleur", "zwart")
+laag(Draai)
+wijzig("hoek", getal.teller(20, 0, 360))
+
+
+
+// const v = [
+//     vorm.driehoek(),
+//     vorm.vierkant(),
+//     vorm.veelhoek(5),
+//     vorm.hart(),
+//     vorm.ster(5),
+//     vorm.zon()
+// ];
+// const n = [
+//     "driehoek()",
+//     "vierkant()",
+//     "veelhoek(5)",
+//     "hart()",
+//     "ster(5)",
+//     "zon()"
+// ];
+// for (let i = 0; i < v.length; i++) {
+//     laag(Vorm)
+//     wijzig("vorm", v[i])
+//     laag(Tekst)
+//     wijzig("kleur", "zwart")
+//     wijzig("tekst", n[i])
+//     laag(Grootte)
+//     wijzig("grootte", 45)
+//     groepeer_lagen(2)
+//     laag(Verplaats)
+//     wijzig("pad", pad.rechts(i * 200 - 600))
+// }
 
 
 // laag(Cirkels)
