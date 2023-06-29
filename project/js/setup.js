@@ -262,6 +262,7 @@ const kleur = {
       return color(_tint, sat, val, 100 - doorzichtigheid)
     }
     duur /= 10
+    start /= 10
     return (dt=0) => {
       return _regenboog(duur, start + dt, doorzichtigheid, sat, val)
     }

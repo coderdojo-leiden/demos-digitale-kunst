@@ -9,27 +9,38 @@ wijzig("kleur", "lichtblauw")
 
 laag(Lijnen)
 wijzig("kleur", "#bbbbff")
-wijzig("afstand", getal.golf(100, 40, 50))
+wijzig("afstand", 40)
+laag(Verplaats)
+wijzig("pad", pad.omlaag(getal.teller(5, 0, 40)))
+laag(Draai)
+wijzig("hoek", 10);
+
+laag(Vorm)
+wijzig("vorm", vorm.vierkant())
+wijzig("kleur", kleur.regenboog(100, 50))
+laag(Vermenigvuldig)
+wijzig("aantal", 2)
+wijzig("variatie", 0)
+laag(Draai)
+wijzig("hoek", getal.teller(30, 0, 360))
 
 laag(Vorm)
 wijzig("vorm", vorm.cirkel())
 wijzig("kleur", kleur.regenboog())
 laag(Verplaats)
-wijzig("pad", pad.x(getal.golf(30, -100, 300)))
+wijzig("pad", pad.x(getal.golf(30, -400, 400)))
 
 laag(Vorm)
 wijzig("vorm", vorm.cirkel())
 wijzig("kleur", kleur.regenboog())
 laag(Verplaats)
-wijzig("pad", pad.x(getal.golf(-30, -300, 100)))
+wijzig("pad", pad.x(getal.golf(-30, -400, 400)))
 
-laag(Tekst)
-wijzig("tekst", "Coding is cool!")
-wijzig("kleur", "zwart")
-laag(Grootte)
-wijzig("grootte", getal.golf(20, 75, 125))
-laag(Verplaats)
-wijzig("pad", pad.omhoog(250))
+// laag(Tekst)
+// wijzig("tekst", tekst.wissel(50, "Digitale bewegende kunst?", "Een koud kunstje!"))
+// wijzig("kleur", "zwart")
+// laag(Grootte)
+// wijzig("grootte", getal.golf(20, 90, 110))
 
 
 // --------- HIER EINDIGT JE DEMO --------------

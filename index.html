@@ -9,6 +9,14 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js"></script> -->
     <style>
       body { margin: 0; padding: 0; overflow: hidden; }
+      #intro {
+        position: absolute; left: 0; top: 0; z-index: 100;
+        padding: 1em 2em;
+        margin: 1em;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+      }
+      h1 { padding: 0; margin: 0; }
     </style>
 
     <!-- Lettertypes: Coiny, Major Mono Display, Satisfy -->
@@ -19,13 +27,13 @@
 
   <body>
 
-    <h1>Een flitsende demo</h1>
+    <div id="intro">
+      <h1>Maak een flitsende demo!</h1>
 
-    <p>L<!--  -->aat zien wat je kunt met je eigen *demo*, een digitaal bewegend kunstwerk!</p>
-
-    <p>Hieronder staat een eenvoudig voorbeeldje. Jij kunt vast iets veel mooiers maken!</p>
-
-    <p>Begin bij <a href="./1%20-%20startproject.html">het startproject</a>!</p>
+      <p>Laat zien wat je kunt met je eigen *demo*, een digitaal bewegend kunstwerk!</p>
+      <p>Hieronder staat een eenvoudig voorbeeldje. Jij kunt vast iets veel mooiers maken!</p>
+      <p>Begin bij <a href="./1%20-%20startproject.html">het startproject</a>!</p>
+    </div>
 
     <script src="project/js/setup.js"></script>
     <script src="project/js/effecten.js"></script>
