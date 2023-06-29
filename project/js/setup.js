@@ -696,5 +696,7 @@ function echtEenGetal(n) {
 }
 
 function muziek(id) {
-  document.getElementById("musicframe").src = `https://www.youtube.com/embed/${id}?autoplay=1`
+  setTimeout(() => {
+    document.getElementById("musicframe").src = `https://www.youtube.com/embed/${id}?autoplay=1`
+  }, 1000)
 }
