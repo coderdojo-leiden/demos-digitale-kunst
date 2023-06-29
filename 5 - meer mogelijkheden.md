@@ -4,11 +4,7 @@ Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je 
 
 Hieronder staan een heleboel mogelijkheden uitgelegd. Kies iets wat er leuk uitziet, probeer het uit en maak iets moois!
 
-Hier zijn nog een paar suggesties:
-- Gebruik `vorm.wissel()` om tussen verschillende vormen te wisselen!
-- Maak een `Tekstrol` met een hele lange tekst (zet je tekst tussen `` `...` `` (omgekeerde apostrof, linksboven op je toetsenbord) in plaats van `"..."`, dan kun je hem over meerdere regels verdelen). Laat de tekst op en neer golven door `hoogte` te wijzigen naar `getal.golf()`.
-- Maak twee `Lijnen` lagen, en laag een van de twee lagen draaien met `hoek` op `getal.golf(10, 20)`. De twee overlappende lijnen-lagen zorgen voor een leuk effect! (dit heet en _Moiré-patroon_). Zulke patronen kun je ook maken met twee `Cirkels` lagen waarvan je er beweegt met `Verplaats` en `pad.rechts(getal.golf())`.
-  Succes!
+Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
 
 Hier staan (bijna) alle mogelijkheden uitgelegd:
 - [Teken-lagen](#teken-lagen)
@@ -20,6 +16,7 @@ Hier staan (bijna) alle mogelijkheden uitgelegd:
 - [Lettertypes](#lettertypes)
 - [Plaatjes](#plaatjes)
 - [Toetsen tijdens de demo](#toetsen-tijdens-de-demo)
+- [Zomaar een paar ideetjes](#zomaar-een-paar-ideetjes)
 
 ## Teken-lagen
 
@@ -263,3 +260,12 @@ Als de demo in de browser actief is (klik er op met de muis, dan weet je het zek
 Je kunt zelfs de `Achtergrond` laag uitzetten door op <kbd>0</kbd> te drukken. Wat gebeurt er dan?
 
 Om alle lagen weer zichtbaar te maken: druk op <kbd>~</kbd> (tilde, linksboven op je keyboard).
+
+
+## Zomaar een paar ideetjes
+
+Hier zijn nog een paar dingen die je kunt proberen:
+- Gebruik `vorm.wissel()` om tussen verschillende vormen te wisselen!
+- Maak een `Tekstrol` met een hele lange tekst (zet je tekst tussen `` `...` `` (omgekeerde apostrof, linksboven op je toetsenbord) in plaats van `"..."`, dan kun je hem over meerdere regels verdelen). Laat de tekst op en neer golven door `hoogte` te wijzigen naar `getal.golf()`.
+- Maak twee `Lijnen` lagen, en laag een van de twee lagen draaien met `hoek` op `getal.golf(10, 20)`. De twee overlappende lijnen-lagen zorgen voor een leuk effect! (dit heet en _Moiré-patroon_). Zulke patronen kun je ook maken met twee `Cirkels` lagen waarvan je er beweegt met `Verplaats` en `pad.rechts(getal.golf())`.
+  Succes!

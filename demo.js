@@ -36,12 +36,6 @@ wijzig("kleur", kleur.regenboog())
 laag(Verplaats)
 wijzig("pad", pad.x(getal.golf(-30, -400, 400)))
 
-// laag(Tekst)
-// wijzig("tekst", tekst.wissel(50, "Digitale bewegende kunst?", "Een koud kunstje!"))
-// wijzig("kleur", "zwart")
-// laag(Grootte)
-// wijzig("grootte", getal.golf(20, 90, 110))
-
 
 // --------- HIER EINDIGT JE DEMO --------------
 

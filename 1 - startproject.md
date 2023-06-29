@@ -22,11 +22,11 @@ Als je iets wijzigt, kun je de demo uitvoeren door op groene knop **Run** (uitvo
   
 Als je geen Replit account kunt of wilt maken, kun je ook in een teksteditor zoals Kladblok of <a target="_blank" href="https://notepad-plus-plus.org/downloads/">Notepad++</a> werken.
 
-[Download](project.zip) het project, pak het zipbestand uit op een handige plaats (bijvoorbeeld het bureaublad) en open `index.html` in de webbrowser (meestal Chrome). Open `demo.js` in je editor.
+<a href='project.zip'>Download</a> het project, pak het zipbestand uit op een handige plaats (bijvoorbeeld het bureaublad) en open <code>index.html</code> in de webbrowser (meestal Chrome). Open <code>demo.js</code> in je editor.
 
 Wijzig de code, sla het bestand op (<kbd>Ctrl+S</kbd>), ga naar de webbrowser en herlaad de pagina (<kbd>F5</kbd>).
 
-Je kunt ook het programma [Visual Studio Code](https://code.visualstudio.com/download) gebruiken, met de [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensie. Vraag aan een mentor hoe dat moet.
+Je kunt ook het programma <a href='https://code.visualstudio.com/download'>Visual Studio Code</a> gebruiken, met de <a href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Live Server</a> extensie. Vraag aan een mentor hoe dat moet.
 
 </details>
 </blockquote>
