@@ -113,4 +113,4 @@ Wat is het verschil? Snap je waarom?
 
 Als meerdere effecten niet precies doen wat je verwacht, probeer dan dus eens een andere volgorde!
 
-Bij de volgende stap gaan we onze vorm vermenigvuldigen: [Demo 4 - vermenigvuldig](./4%20-%20vermenigvuldig.html)
+Bij de volgende stap gaan we onze vorm vermenigvuldigen: [Demo 4 - vermenigvuldig](./4%20-%20vermenigvuldig.md)

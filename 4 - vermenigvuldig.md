@@ -68,4 +68,4 @@ We hebben nu de vorm in grootte laten veranderen, maar je kunt ook andere dingen
 - Je kunt ook de `"afstand"` eigenschap van `Vermenigvuldig` wijzigen naar `getal.golf(10, 150, 250)`. Gek effect hè?
 - Je kunt de `aantal` eigenschap bij `Vermenigvuldig` laten veranderen met `getal.golf(5, 3, 10)`.
 
-Experimenteer zelf verder! Gebruik het [overzicht in de volgende stap](./5%20-%20meer%20mogelijkheden.html) om te zien wat je allemaal kunt doen.
+Experimenteer zelf verder! Gebruik het [overzicht in de volgende stap](./5%20-%20meer%20mogelijkheden.md) om te zien wat je allemaal kunt doen.

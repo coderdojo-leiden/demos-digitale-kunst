@@ -2,4 +2,4 @@
 
 Kinderen kunnen eenvoudig een grafische demo maken met lagen en effecten.
 
-[Start hier](./1%20-%20startproject.html)
+[Start hier](./1%20-%20startproject.md)

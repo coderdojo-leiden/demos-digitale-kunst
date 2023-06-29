@@ -31,4 +31,4 @@ Je kunt ook het programma <a target='_blank' href='https://code.visualstudio.com
 </details>
 </blockquote>
 
-Werkt het? Mooi! Laten we dan echt aan de slag gaan, met [lagen en eigenschappen](2%20-%20lagen%20en%20eigenschappen.html)!
+Werkt het? Mooi! Laten we dan echt aan de slag gaan, met [lagen en eigenschappen](2%20-%20lagen%20en%20eigenschappen.md)!

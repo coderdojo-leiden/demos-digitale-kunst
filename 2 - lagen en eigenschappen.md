@@ -66,4 +66,4 @@ wijzig("tekst", "Coding is cool!")
 
 > **TIP**: wil je tekst op meerdere regels? Gebruik `\n` om een nieuwe regel te beginnen. Probeer het maar!
 
-Alles staat nu nog stil, maar daar gaan we verandering in brengen, met [effecten](3%20-%20effecten.html)!
+Alles staat nu nog stil, maar daar gaan we verandering in brengen, met [effecten](3%20-%20effecten.md)!
