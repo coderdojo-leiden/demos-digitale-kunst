@@ -46,7 +46,7 @@ Probeer ook andere getallen!
 
 `pad.stuiter()` is maar 1 voorbeeld van een pad. Hoe zien `pad.cirkel()` en `pad.lissa()` er uit? Ook hier kun je getallen aan meegeven om het pad aan te passen.
 
-<iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/verplaats"></iframe>
+<iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/verplaats/"></iframe>
 
 ### Draai
 
@@ -61,6 +61,7 @@ wijzig("hoek", getal.golf(50, 20))
 
 Probeer de getallen weer aan te passen. Begrijp je wat ze doen?
 
+<iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/draai/"></iframe>
 
 ## Grootte
 

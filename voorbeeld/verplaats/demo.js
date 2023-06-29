@@ -8,7 +8,8 @@ laag(Achtergrond)
 wijzig("kleur", "lichtblauw")
 
 laag(Vorm)
-wijzig("vorm", vorm.vierkant())
+wijzig("vorm", vorm.ster())
+wijzig("kleur", "zwart")
 laag(Verplaats)
 wijzig("pad", pad.lissa())
 
