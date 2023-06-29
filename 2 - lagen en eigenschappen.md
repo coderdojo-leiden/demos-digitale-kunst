@@ -77,3 +77,7 @@ wijzig("lettertype", "handschrift")
 ```
 
 Alles staat nu nog stil, maar daar gaan we verandering in brengen, met [effecten](3%20-%20effecten.html)!
+
+<p style='font-size: 150%; font-weight: bold; text-align: right;'>
+    <a href='./3%20-%20effecten.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
+</p>

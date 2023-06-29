@@ -5,7 +5,8 @@ function maakDemo()
 
 
 laag(Achtergrond)
-wijzig("kleur", "wit")
+
+laag(Tekst)
 
 
 // laag(Vorm)
@@ -20,25 +21,25 @@ wijzig("kleur", "wit")
 // wijzig("lettertype", "oud")
 
 
-const v = [
-    "cartoon",
-    "boek",
-    "handschrift",
-    "computer",
-    "krant",
-    "oud",
-    "wildwest"
-];
-for (let i = 0; i < v.length; i++) {
-    laag(Tekst)
-    wijzig("kleur", "zwart")
-    wijzig("tekst", v[i])
-    wijzig("lettertype", v[i])
-    laag(Grootte)
-    wijzig("grootte", 50)
-    laag(Verplaats)
-    wijzig("pad", pad.omlaag(i * 50 - 300))
-}
+// const v = [
+//     "cartoon",
+//     "boek",
+//     "handschrift",
+//     "computer",
+//     "krant",
+//     "oud",
+//     "wildwest"
+// ];
+// for (let i = 0; i < v.length; i++) {
+//     laag(Tekst)
+//     wijzig("kleur", "zwart")
+//     wijzig("tekst", v[i])
+//     wijzig("lettertype", v[i])
+//     laag(Grootte)
+//     wijzig("grootte", 50)
+//     laag(Verplaats)
+//     wijzig("pad", pad.omlaag(i * 50 - 300))
+// }
 
 
 // laag(Cirkels)

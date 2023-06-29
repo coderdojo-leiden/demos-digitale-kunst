@@ -69,3 +69,7 @@ We hebben nu de vorm in grootte laten veranderen, maar je kunt ook andere dingen
 - Je kunt de `aantal` eigenschap bij `Vermenigvuldig` laten veranderen met `getal.golf(5, 3, 10)`.
 
 Experimenteer zelf verder! Gebruik het [overzicht in de volgende stap](./5%20-%20meer%20mogelijkheden.html) om te zien wat je allemaal kunt doen.
+
+<p style='font-size: 150%; font-weight: bold; text-align: right;'>
+    <a href='./5%20-%20meer%20mogelijkheden.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
+</p>

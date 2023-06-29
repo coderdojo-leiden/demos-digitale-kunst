@@ -121,3 +121,7 @@ Wat is het verschil? Snap je waarom?
 Als meerdere effecten niet precies doen wat je verwacht, probeer dan dus eens een andere volgorde!
 
 Bij de volgende stap gaan we onze vorm vermenigvuldigen: [Demo 4 - vermenigvuldig](./4%20-%20vermenigvuldig.html)
+
+<p style='font-size: 150%; font-weight: bold; text-align: right;'>
+    <a href='./4%20-%20vermenigvuldig.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
+</p>
