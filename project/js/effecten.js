@@ -338,7 +338,10 @@ MAP_FONT = {
   "cartoon": "Coiny",
   "boek": "Bitter",
   "handschrift": "Satisfy",
-  "computer": "Major Mono Display",
+  "computer": "Share Tech Mono",
+  "krant": "DM Serif Display",
+  "oud": "Almendra",
+  "wildwest": "Ultra"
 };
 
 function mapFont(f) {

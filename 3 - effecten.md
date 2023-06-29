@@ -61,6 +61,8 @@ wijzig("hoek", getal.golf(50, 20))
 
 Probeer de getallen weer aan te passen. Begrijp je wat ze doen?
 
+In plaats van `getal.golf()` kun je ook `getal.teller(20, 0, 360)` gebruiken om in 2 seconden helemaal rond te draaien:
+
 <iframe src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/draai/"></iframe>
 
 ## Grootte

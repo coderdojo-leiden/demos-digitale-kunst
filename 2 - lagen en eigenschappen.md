@@ -66,6 +66,14 @@ Natuurlijk kun je de tekst aanpassen:
 wijzig("tekst", "Coding is cool!")
 ```
 
-> **TIP**: wil je tekst op meerdere regels? Gebruik `\n` om een nieuwe regel te beginnen. Probeer het maar!
+<img style='float: right;' src='./images/lettertypes.png' alt='lettertypes' />
+
+> **TIP**: wil je tekst op meerdere regels? Gebruik `\n` om een nieuwe regel te beginnen!
+
+Je kunt ook een ander lettertype gebruiken:
+
+```js
+wijzig("lettertype", "handschrift")
+```
 
 Alles staat nu nog stil, maar daar gaan we verandering in brengen, met [effecten](3%20-%20effecten.html)!
