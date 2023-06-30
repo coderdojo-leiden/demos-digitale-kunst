@@ -2,7 +2,7 @@
 
 Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je nu zelf nieuwe teken-lagen toevoegen, eigenschappen wijzigen, en effect-lagen zoals `Draai`, `Verplaats` en `Grootte` toevoegen.
 
-Hieronder staan een heleboel mogelijkheden uitgelegd. Kies iets wat er leuk uitziet, probeer het uit en maak iets moois!
+Hieronder staan een heleboel mogelijkheden. Kies iets wat er leuk uitziet, probeer het uit en maak iets moois!
 
 Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
 
@@ -14,10 +14,10 @@ Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
 - [Paden](#paden)
 - [Lettertypes](#lettertypes)
 - [Plaatjes](#plaatjes)
-- [Kopie van een laag maken](#kopie-van-een-laag-maken)
-- [Lagen groeperen](#muziek)
 - [Muziek](#muziek)
 - [Toetsen tijdens de demo](#toetsen-tijdens-de-demo)
+- [Kopie van een laag maken](#kopie-van-een-laag-maken)
+- [Lagen groeperen](#muziek)
 - [Zomaar een paar ideetjes](#zomaar-een-paar-ideetjes)
 
 ## Teken-lagen
@@ -35,7 +35,7 @@ Deze lagen tekenen iets. Daarna kun je er effect-lagen op toepassen. Er zijn er 
 |                       |                                                         | `lijndikte`     | Dikte van de rand (als je `lijnkleur` zet)                              | `2`                       |
 |                       |
 | `Tekst`               | Schrijft tekst                                          | `tekst`         | Welke tekst?                                                            | `"Hallo"`                 |
-|                       |                                                         | `lettertype`    | Naam van het lettertype (het soort letter). Zie **Lettertypes**         | `"boek"`                  |
+|                       |                                                         | `lettertype`    | Het soort letter. Zie **Lettertypes**                                   | `"boek"`                  |
 |                       |
 | `Plaatje`             | Tekent een plaatje                                      | `naam`          | Naam van het plaatje. Zie **Plaatjes**                                  | `"logo.png"`              |
 |                       |
@@ -65,11 +65,11 @@ Deze hebben we ook al gezien, maar hier zijn ze nog een keer:
 | **Naam**         | **Beschrijving**                               | **Eigenschap** | **Beschrijving**                                                                                            |        **Standaardwaarde** |
 |:-----------------|:-----------------------------------------------|----------------|:------------------------------------------------------------------------------------------------------------|---------------------------:|
 | `Verplaats`      | Verplaats laag                                 | `pad`          | Over welk pad beweegt de laag?                                                                              |             `pad.cirkel()` |
-|                       |
+|                  |
 | `Grootte`        | Maakt laag groter of kleiner                   | `grootte`      | Hoe verandert de grootte van de laag? (200=twee keer zo groot, 50=twee keer zo klein, 100=geen verandering) | `getal.golf(20, 100, 200)` |
-|                       |
+|                  |
 | `Draai`          | Draait de laag                                 | `hoek`         | Hoe draait de laag? (90=kwart slag, 180=ondersteboven, 360=helemaal rond)                                   |             `getal.golf()` |
-|                       |
+|                  |
 | `Vermenigvuldig` | Kopieert de laag een aantal keer in een cirkel | `aantal`       | Hoeveel keer de laag gekopieerd wordt                                                                       |                        `7` |
 |                  |                                                | `afstand`      | Hoe groot wordt de cirkel waarin de vormen staan?                                                           |                      `200` |
 |                  |                                                | `variatie`     | (moeilijk) Hoeveel varieert afstand en grootte per vorm?                                                    |                       `20` |
@@ -143,7 +143,7 @@ Deze kleuren verandering niet met de tijd.
 |:------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
 | `"rood"`                | De kleur rood                                                                                                                  |
 | `20`                    | De kleur geel (probeer waardes van `0` tot `100`!)                                                                             |
-| `#ff00ff`               | De kleur paars als hexwaarde                                                                                                   |
+| `"#ff00ff"`               | De kleur paars als hexwaarde                                                                                                   |
 | `kleur.rgb(0, 100, 0)`  | Een kleur opgebouwd uit (R)ood, (G)roen en (B)lauw. Dit is puur groen.                                                         |
 | `kleur.hsb(20, 50, 50)` | Een kleur opgebouwd uit kleurtint, verzadiging (is de kleur flets of helder?)<br>en intensiteit (is de kleur donker of licht?) |
 
@@ -185,17 +185,16 @@ Er zijn heel wat vormen, en je kunt zelfs tussen verschillende vormen wisselen!
 
 ### Vaste vorm
 
-| **Naam**           | **Beschrijving**                                                    |
-|:-------------------|:--------------------------------------------------------------------|
-| `vorm.vierkant()`  | Een vierkant                                                        |
-| `vorm.cirkel()`    | Een cirkel                                                          |
-| `vorm.driehoek()`  | Een driehoek                                                        |
-| `vorm.hart()`      | Een hart                                                            |
-| `vorm.ster()`      | Een ster met 5 punten                                               |
-| `vorm.ster(6)`     | Een ster met 6 punten                                               |
-| `vorm.veelhoek(5)` | Een vijfhoek (_pentagon_)                                           |
-| `vorm.veelhoek(6)` | Een zeshoek (_hexagon_)                                             |
-| `8`                | Gewoon een getal opgeven werkt ook, dit is een achthoek (_octagon_) |
+| **Naam**            | **Beschrijving**                                                    |
+|:--------------------|:--------------------------------------------------------------------|
+| `vorm.vierkant()`   | Een vierkant                                                        |
+| `vorm.cirkel()`     | Een cirkel                                                          |
+| `vorm.driehoek()`   | Een driehoek                                                        |
+| `vorm.hart()`       | Een hart                                                            |
+| `vorm.ster(5)`      | Een ster met 5 punten                                               |
+| `vorm.zon()`        | Een zonnetje                                                        |
+| `vorm.veelhoek(6)`  | Een zeshoek (_hexagon_)                                             |
+| `8`                 | Gewoon een getal opgeven werkt ook, dit is een achthoek (_octagon_) |
 
 
 ### Wisselende vorm
@@ -248,12 +247,11 @@ Deze paden leveren verschillende bewegingen op.
 
 ## Lettertypes
 
-Probeer deze lettertypes bij `Tekst` en `Tekstrol`:
-- `"cartoon"`
-- `"boek"`
-- `"handschrift"`
-- `"computer"`
+Dit zijn de lettertypes waaruit je kunt kiezen:
 
+<img src="images/lettertypes.png" />
+
+Zit er niets bij? Je kunt ook [hier](https://fonts.google.com/) naar een ander lettertype zoeken, maar voor je het kunt gebruiken, moet het worden toegevoegd aan `index.html`. Een mentor kan je daarbij helpen.
 
 ## Plaatjes
 
@@ -262,47 +260,13 @@ In de `plaatjes/` map staan al een paar plaatjes die je kunt gebruiken met de la
 - `"logo2.png"`
 - `"logo3.png"`
 
-Als je een plaatje wilt gebruiken, moet je het wel eerst laden. Om bijvoorbeeld twee plaatjes te laden, zet je dit bovenaan je demo:
+Voor je een plaatje kunt gebruiken, moet je het inladen. Zo laad je bijvoorbeeld twee plaatjes:
 
 ```js
 laadPlaatjes("logo.png", "logo2.png")
 ```
 
-Je kunt ook je eigen plaatje gebruiken: zoek een leuk plaatje, download het en sleep het uit de Download map naar de `plaatjes` map. Vraag het aan een mentor als het niet lukt.
-
-
-## Kopie van een laag maken
-
-Om een kopie te maken van de laag die je net hebt gemaakt (met alle effecten die je hebt toegevoegd):
-
-```js
-kopieer_laag()
-```
-
-De laag en effecten worden precies gekopieerd. Daarna moet je natuurlijk nog een effect toevoegen, anders vallen de twee lagen precies over elkaar heen. Probeer bijvoorbeeld:
-
-```js
-laag(Draai)
-wijzig("hoek", 180)
-```
-
-De kopie staat dan op z'n kop!
-
-
-## Lagen groeperen
-
-Je kunt een aantal lagen groeperen, zodat je ze samen kunt verplaatsen, draaien, vergroten, enzovoort. Gebruik dit commando:
-
-```js
-groepeer_lagen(3)
-```
-
-om de laatste drie teken-lagen die je gemaakt hebt (bijvoorbeeld twee vormen en een tekst) samen te groeperen. Als je daarna een effect toevoegt, geldt dat effect voor alle drie de lagen tegelijk. Bijvoorbeeld:
-
-```js
-laag(Verplaats)
-wijzig("pad", pad.lissa())
-```
+Je kunt ook een ander plaatje gebruiken: download een leuk plaatje en sleep het uit de Download map naar de `plaatjes` map. Vraag het aan een mentor als het niet lukt.
 
 
 ## Muziek
@@ -338,10 +302,45 @@ Je kunt zelfs de `Achtergrond` laag uitzetten door op <kbd>0</kbd> te drukken. W
 Om alle lagen weer zichtbaar te maken: druk op <kbd>~</kbd> (tilde, linksboven op je keyboard).
 
 
+## Kopie van een laag maken
+
+Om een kopie te maken van de laag die je net hebt gemaakt (met alle effecten die je hebt toegevoegd):
+
+```js
+kopieer_laag()
+```
+
+De laag en effecten worden precies gekopieerd. Daarna moet je natuurlijk nog een effect toevoegen, anders vallen de twee lagen precies over elkaar heen. Probeer bijvoorbeeld:
+
+```js
+laag(Draai)
+wijzig("hoek", 180)
+```
+
+De kopie staat dan op z'n kop!
+
+
+## Lagen groeperen
+
+Je kunt een aantal lagen groeperen, zodat je ze samen kunt verplaatsen, draaien, vergroten, enzovoort. Gebruik dit commando:
+
+```js
+groepeer_lagen(3)
+```
+
+om de laatste drie teken-lagen die je gemaakt hebt (bijvoorbeeld twee vormen en een tekst) samen te groeperen. Als je daarna een effect toevoegt, geldt dat effect voor de hele groep samen. Bijvoorbeeld:
+
+```js
+laag(Verplaats)
+wijzig("pad", pad.lissa())
+```
+
+laat de hele groep over het scherm vliegen.
+
 ## Zomaar een paar ideetjes
 
 Hier zijn nog een paar dingen die je kunt proberen:
 - Gebruik `vorm.wissel()` om tussen verschillende vormen te wisselen!
 - Maak een `Tekstrol` met een hele lange tekst (zet je tekst tussen `` `...` `` (omgekeerde apostrof, linksboven op je toetsenbord) in plaats van `"..."`, dan kun je hem over meerdere regels verdelen). Laat de tekst op en neer golven door `hoogte` te wijzigen naar `getal.golf()`.
-- Maak twee `Lijnen` lagen, en laag een van de twee lagen draaien met `hoek` op `getal.golf(10, 20)`. De twee overlappende lijnen-lagen zorgen voor een leuk effect! (dit heet en _Moiré-patroon_). Zulke patronen kun je ook maken met twee `Cirkels` lagen waarvan je er beweegt met `Verplaats` en `pad.rechts(getal.golf())`.
+- Maak twee `Lijnen` lagen, en laat een van de twee lagen draaien met `hoek` op `getal.golf(10, 20)`. De twee overlappende lijnen-lagen zorgen voor een leuk effect! (dit heet en _Moiré-patroon_). Zulke patronen kun je ook maken met twee `Cirkels` lagen waarvan je er beweegt met `Verplaats` en `pad.rechts(getal.golf())`.
   Succes!
