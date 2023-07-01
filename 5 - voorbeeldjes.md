@@ -4,11 +4,11 @@ Hier zie je voorbeeldjes om je op ideeën te brengen.
 
 Op de volgende pagina zie je een compleet overzicht van alle mogelijkheden.
 
-## Moire-patroon
+## Moiré-patroon
 
 <iframe style='float: right' src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/moire/"></iframe>
 
-We maken een `Lijnen` laag (die lijnen van links naar rechts over het hele scherm tekent), dan maken we een kopie van die laag en die kopie laten we langzaam heen en weer draaien.
+We maken een `Lijnen` laag (die lijnen van links naar rechts over het hele scherm tekent), dan maken we een kopie van die laag en die kopie laten we langzaam heen en weer draaien. Dit geeft mooie patronen.
 
 ```js
 laag(Lijnen)
@@ -18,6 +18,8 @@ kopieer_laag()   // maak nog een Lijnen laag door de vorige te kopiëren
 laag(Draai)
 wijzig("hoek", getal.golf(50, 20))
 ```
+
+Je kunt ook `Cirkels` en `Verplaats` met `pad.rechts(getal.golf())` gebruiken om zo'n soort effect te krijgen. Probeer maar!
 
 <div style="clear:both"></div>
 
@@ -39,6 +41,26 @@ Doei..................!
 wijzig("kleur", "zwart")
 wijzig("lettertype", "boek")
 wijzig("hoogte", getal.golf(20, 40))
+```
+
+<div style="clear:both"></div>
+
+### Alles verandert!
+
+<iframe style='float: right' src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/wissel/"></iframe>
+
+We gebruiken `vorm.wissel` om tussen cirkels, harten en sterren te wisselen. De `Vermenigvuldig` laag met golvende `afstand` en een `aantal` dat wisselt tussen 3, 6 en 12 zorgt voor een hoop verandering.
+
+```js
+laag(Vorm)
+wijzig("vorm", vorm.wissel(50, vorm.cirkel(), vorm.hart(), vorm.ster()))
+wijzig("kleur", "zwart")
+laag(Vermenigvuldig)
+wijzig("variatie", 2)
+wijzig("aantal", getal.wissel(20, 3, 6, 12))
+wijzig("afstand", getal.golf(10, 200, 260))
+laag(Draai)
+wijzig("hoek", getal.golf(50, 90))
 ```
 
 <div style="clear:both"></div>

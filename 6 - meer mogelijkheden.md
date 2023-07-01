@@ -4,8 +4,6 @@ Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je 
 
 Hieronder staan een heleboel mogelijkheden. Kies iets wat er leuk uitziet, probeer het uit en maak iets moois!
 
-Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
-
 - [Teken-lagen](#teken-lagen)
 - [Effect-lagen](#effect-lagen)
 - [Getallen](#getallen)
@@ -18,7 +16,6 @@ Helemaal onderaan vind je nog een paar ideetjes die je kunt proberen.
 - [Toetsen tijdens de demo](#toetsen-tijdens-de-demo)
 - [Kopie van een laag maken](#kopie-van-een-laag-maken)
 - [Lagen groeperen](#muziek)
-- [Zomaar een paar ideetjes](#zomaar-een-paar-ideetjes)
 
 ## Teken-lagen
 
@@ -350,11 +347,3 @@ wijzig("pad", pad.lissa())
 ```
 
 laat de hele groep over het scherm vliegen.
-
-## Zomaar een paar ideetjes
-
-Hier zijn nog een paar dingen die je kunt proberen:
-- Gebruik `vorm.wissel()` om tussen verschillende vormen te wisselen!
-- Maak een `Tekstrol` met een hele lange tekst (zet je tekst tussen `` `...` `` (omgekeerde apostrof, linksboven op je toetsenbord) in plaats van `"..."`, dan kun je hem over meerdere regels verdelen). Laat de tekst op en neer golven door `hoogte` te wijzigen naar `getal.golf()`.
-- Maak twee `Lijnen` lagen, en laat een van de twee lagen draaien met `hoek` op `getal.golf(10, 20)`. De twee overlappende lijnen-lagen zorgen voor een leuk effect! (dit heet en _Moiré-patroon_). Zulke patronen kun je ook maken met twee `Cirkels` lagen waarvan je er beweegt met `Verplaats` en `pad.rechts(getal.golf())`.
-  Succes!

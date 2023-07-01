@@ -68,7 +68,7 @@ We hebben nu de vorm in grootte laten veranderen, maar je kunt ook andere dingen
 - Je kunt ook de `"afstand"` eigenschap van `Vermenigvuldig` wijzigen naar `getal.golf(10, 150, 250)`. Gek effect hè?
 - Je kunt de `aantal` eigenschap bij `Vermenigvuldig` laten veranderen met `getal.golf(5, 3, 10)`.
 
-In de [volgende stap](./5%20-%2020voorbeeldjes.html) kijken we naar een aantal voorbeeldjes. Die brengen je vast op leuke ideeën!
+In de [volgende stap](./5%20-%20voorbeeldjes.html) kijken we naar een aantal voorbeeldjes. Die brengen je vast op leuke ideeën!
 
 <p style='font-size: 150%; font-weight: bold; text-align: right;'>
     <a href='./5%20-%20voorbeeldjes.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
