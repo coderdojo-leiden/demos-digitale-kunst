@@ -14,7 +14,8 @@ We maken een `Lijnen` laag (die lijnen van links naar rechts over het hele scher
 laag(Lijnen)
 wijzig("kleur", "zwart")
 
-kopieer_laag()   // maak nog een Lijnen laag door de vorige te kopiëren
+// kopieer de Lijnen laag en pas 'm aan
+kopieer_laag()
 laag(Draai)
 wijzig("hoek", getal.golf(50, 20))
 ```
@@ -53,14 +54,14 @@ We gebruiken `vorm.wissel` om tussen cirkels, harten en sterren te wisselen. De 
 
 ```js
 laag(Vorm)
-wijzig("vorm", vorm.wissel(50, vorm.cirkel(), vorm.hart(), vorm.ster()))
+wijzig("vorm", vorm.wissel(60, vorm.cirkel(), vorm.hart(), vorm.ster()))
 wijzig("kleur", "zwart")
 laag(Vermenigvuldig)
 wijzig("variatie", 2)
 wijzig("aantal", getal.wissel(20, 3, 6, 12))
 wijzig("afstand", getal.golf(10, 200, 260))
 laag(Draai)
-wijzig("hoek", getal.golf(50, 90))
+wijzig("hoek", getal.golf(40, 90))
 ```
 
 <div style="clear:both"></div>

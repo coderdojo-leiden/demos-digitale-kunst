@@ -16,7 +16,8 @@ Doei..................!
 `)
 wijzig("kleur", "zwart")
 wijzig("lettertype", "boek")
-wijzig("hoogte", getal.golf(20, 40))
+wijzig("grootte", 120)
+wijzig("hoogte", getal.golf(20, 200))
 
 // --------- HIER EINDIGT JE DEMO --------------
 
