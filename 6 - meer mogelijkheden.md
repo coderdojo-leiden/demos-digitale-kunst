@@ -1,4 +1,4 @@
-# DEMO 5 - (Veel) meer mogelijkheden
+# DEMO 6 - (Veel) meer mogelijkheden
 
 Begrijp je nu precies hoe `laag()` en `wijzig()` werken? Als het goed is kun je nu zelf nieuwe teken-lagen toevoegen, eigenschappen wijzigen, en effect-lagen zoals `Draai`, `Verplaats` en `Grootte` toevoegen.
 
@@ -139,34 +139,47 @@ Er zijn een hoop manieren om (veranderende) kleuren in te voeren!
 
 Deze kleuren verandering niet met de tijd.
 
-| **Naam**                | **Beschrijving**                                                                                                               |
-|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| `"rood"`                | De kleur rood                                                                                                                  |
-| `20`                    | De kleur geel (probeer waardes van `0` tot `100`!)                                                                             |
-| `"#ff00ff"`               | De kleur paars als hexwaarde                                                                                                   |
-| `kleur.rgb(0, 100, 0)`  | Een kleur opgebouwd uit (R)ood, (G)roen en (B)lauw. Dit is puur groen.                                                         |
-| `kleur.hsb(20, 50, 50)` | Een kleur opgebouwd uit kleurtint, verzadiging (is de kleur flets of helder?)<br>en intensiteit (is de kleur donker of licht?) |
+| **Naam**                     | **Beschrijving**                                                                                                                              |
+|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| `"rood"`                     | De kleur rood                                                                                                                                 |
+| `20`                         | De kleur geel (probeer waardes van `0` tot `100`!)                                                                                            |
+| `"#ff00ff"`                  | De kleur paars als hexwaarde                                                                                                                  |
+| `kleur.rgb(0, 100, 0)`       | Een kleur opgebouwd uit (R)ood, (G)roen en (B)lauw. Dit is puur groen.                                                                        |
+| `kleur.rgb(100, 100, 0, 50)` | Doorzichtig geel (rood+groen, en het vierde getal is de doorzichtigheid: hoe lager, hoe doorzichtiger)                                        |
+| `kleur.tvi(20, 50, 50)`      | Een kleur opgebouwd uit tint (rood? blauw? etc.), verzadiging (is de kleur flets of helder?)<br>en intensiteit (is de kleur donker of licht?) |
+
+
+### Doorzichtigheid aanpassen
+
+| **Naam**                                             | **Beschrijving**                               |
+|:-----------------------------------------------------|:-----------------------------------------------|
+| `kleur.doorzichtig("rood", getal.golf(40, 10, 100))` | Golft tussen ondoorzichtig en doorzichtig rood |
+| `kleur.doorzichtig(20, getal.golf(40, 10, 100))`     | Golft tussen ondoorzichtig en doorzichtig geel |
+
 
 
 ### Regenboog
 
 Laat alle kleuren van de regenboog voorbijkomen!
 
-| **Naam**               | **Beschrijving**                        |
-|:-----------------------|:----------------------------------------|
-| `kleur.regenboog()`    | Kleuren van de regenboog in 10 seconden |
-| `kleur.regenboog(200)` | Langzamere regenboog                    |
-| `kleur.regenboog(50)`  | Snellere regenboog                      |
+| **Naam**                                                                                                                                | **Beschrijving**                                                                                 |
+|:----------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
+| `kleur.regenboog()`                                                                                                                     | Kleuren van de regenboog in 10 seconden                                                          |
+| `kleur.regenboog(200)`                                                                                                                  | Langzamere regenboog                                                                             |
+| `kleur.regenboog(50)`                                                                                                                   | Snellere regenboog                                                                               |
+| `kleur.regenboog(50, 0, 50)`                                                                                                            | Doorzichtige regenboog (derde getal is doorzichtigheid: hoe lager, hoe doorzichtiger)            |
+| `kleur.doorzichtig(`<br>&nbsp;&nbsp;`kleur.regenboog(),`<br>&nbsp;&nbsp;`getal.golf(40, 10, 100)`<br>`)` | Doorzichtigheid van de regenboog varieert |
 
 
 ### Wissel
 
 Je kunt ook wisselen tussen een aantal gekozen kleuren.
 
-| **Naam**                                    | **Beschrijving**                                       |
-|:--------------------------------------------|:-------------------------------------------------------|
-| `kleur.wissel(20, "wit", "zwart")`          | Wisselt elke 2 seconden tussen wit en zwart            |
-| `kleur.wissel(5, "rood", "groen", "blauw")` | Wisselt elke halve seconde tussen rood, groen en blauw |
+| **Naam**                                                                                                                            | **Beschrijving**                                        |
+|:------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
+| `kleur.wissel(20, "wit", "zwart")`                                                                                                  | Wisselt elke 2 seconden tussen wit en zwart             |
+| `kleur.wissel(5, "rood", "groen", "blauw")`                                                                                         | Wisselt elke halve seconde tussen rood, groen en blauw  |
+| `kleur.doorzichtig(`<br>&nbsp;&nbsp;`kleur.wissel(20, "lichtpaars", "donkergroen"),`<br>&nbsp;&nbsp;`getal.golf(40, 10, 100)`<br>`)` | Wisselt tussen twee kleuren en varieert doorzichtigheid |
 
 
 ### Willekeurig
@@ -199,9 +212,10 @@ Er zijn heel wat vormen, en je kunt zelfs tussen verschillende vormen wisselen!
 
 ### Wisselende vorm
 
-| **Naam**                            | **Beschrijving**                                           |
-|:------------------------------------|:-----------------------------------------------------------|
-| `vorm.wissel(20, vorm.cirkel(), 7)` | Wisselt elke 2 seconden tussen een cirkel en een zevenhoek |
+| **Naam**                                 | **Beschrijving**                                           |
+|:-----------------------------------------|:-----------------------------------------------------------|
+| `vorm.wissel(20, vorm.cirkel(), 7)`      | Wisselt elke 2 seconden tussen een cirkel en een zevenhoek |
+| `vorm.willekeurig(20)` | Wisselt elke 2 seconden naar een willekeurige vorm         |
 
 
 ### Veelhoek met een getalfunctie

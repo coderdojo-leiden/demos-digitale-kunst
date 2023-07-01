@@ -200,12 +200,6 @@ function _knipper(kleur, duur = 10, start = 0) {
   return lerpColor(TRANSPARANT, kleur, sin((tijd + start) * TWO_PI / duur) * 0.5 + 0.5)
 }
 
-// Maak een kleur doorzichtig
-function _doorzichtig(kleur, doorzichtigheid = 50) {
-  tr = color(hue(kleur), saturation(kleur), lightness(kleur), 0)
-  return lerpColor(kleur, tr, doorzichtigheid / 100)
-}
-
 const KLEUREN_NL = {
   rood: "red",
   groen: "green",
@@ -245,26 +239,26 @@ const kleur = {
   code(c) {
     return kleur.naam(c)
   },
-  hsb(h = 100, s = 100, b = 100) {
-    return (dt=0) => color(h, s, b)
+  tvi(tint = 100, verzadiging = 100, intensiteit = 100, alpha = 100) {
+    return (dt=0) => color(tint, verzadiging, intensiteit, alpha)
   },
-  rgb(r = 100, g = 100, b = 0) {
+  rgb(rood = 100, groen = 100, blauw = 0, alpha = 100) {
     return (dt=0) => {
       colorMode(RGB, 100)
-      const c = color(r, g, b)
+      const c = color(rood, groen, blauw, alpha)
       colorMode(HSB, 100)
       return c
     }
   },
-  regenboog(duur = 100, start = 0, doorzichtigheid = 0, sat = 100, val = 100) {
-    function _regenboog(duur, start, doorzichtigheid, sat, val) {
+  regenboog(duur = 100, start = 0, alpha = 100, sat = 100, val = 100) {
+    function _regenboog(duur, start, alpha, sat, val) {
       _tint = ((tijd + start + 100000) * 100 / duur) % 100
-      return color(_tint, sat, val, 100 - doorzichtigheid)
+      return color(_tint, sat, val, alpha)
     }
     duur /= 10
     start /= 10
     return (dt=0) => {
-      return _regenboog(duur, start + dt, doorzichtigheid, sat, val)
+      return _regenboog(duur, start + dt, alpha, sat, val)
     }
   },
   willekeurig(d = 10) {
@@ -278,8 +272,15 @@ const kleur = {
       return c
     }
   },
+  // Maak een kleur doorzichtig
   doorzichtig(kleur, doorzichtigheid = 50) {
-    return (dt=0) => _doorzichtig(kleur(dt), doorzichtigheid)
+    function _doorzichtig(kleur, doorzichtigheid = 50) {
+      tr = color(hue(kleur), saturation(kleur), lightness(kleur), 0)
+      return lerpColor(kleur, tr, doorzichtigheid / 100)
+    }
+    kleur = echtEenFunctie(kleur, 'kleur')
+    doorzichtigheid = echtEenFunctie(doorzichtigheid)
+    return (dt=0) => _doorzichtig(kleur(dt), doorzichtigheid(dt))
   },
   wissel(duur = 10, ...kleuren) {
     kleuren = kleuren.map(k => echtEenFunctie(k, 'kleur'))
@@ -290,6 +291,7 @@ const kleur = {
     }
   }
 }
+kleur.hsb = kleur.hsv = kleur.tvi; // tint/verzadinging/intensiteit
 
 
 // Getalfuncties
@@ -442,6 +444,34 @@ const getal = {
     return (dt=0) => richting * ((tijd + start + dt) * bereik * 10 / duur) % bereik + min
   },
 
+  wissel(duur = 10, ...getallen) {
+    getallen = getallen.map(k => echtEenFunctie(k))
+    duur /= 10
+    return (dt=0) => {
+      const i = floor((tijd + dt) / duur) % getallen.length
+      return getallen[i](dt)
+    }
+  },
+
+  willekeurig(d = 10, min, max) {
+    if (min === undefined && max === undefined) {
+      // standaardwaardes: 0-100
+      min = 0
+      max = 100
+    } else if (max === undefined) {
+      // derde argument weggelaten; tweede is max, min is 0
+      max = min
+      min = 0
+    }
+    d /= 10
+    return (dt=0) => {
+      const t = tijd + dt;
+      randomSeed(floor(t / d)) // <-- TODO: weirdness here, waarom * 200 nodig?
+      const c = random(max - min) + min
+      return c
+    }
+  },
+
   wilde_slinger() {
     return getal.som(30, getal.golf2(), getal.golf2(130, 50))
   },
@@ -456,7 +486,7 @@ const getal = {
 
   langzaam_wiegen() {
     return getal.golf(100, 10)
-  }
+  },
 }
 
 const tekst = {
@@ -604,8 +634,15 @@ const vorm = {
       const i = floor((tijd + dt) / duur) % vormen.length
       return vormen[i](dt)
     }
+  },
+  willekeurig(d = 10) {
+    const kiesUit = [vorm.cirkel(), vorm.driehoek(), vorm.vierkant(), vorm.veelhoek(), vorm.zon(), vorm.hart(), vorm.ster()];
+    d /= 10
+    return (dt=0) => {
+      randomSeed(floor((tijd + dt) / d * 200)) // <-- TODO: weirdness here, waarom * 200 nodig?
+      return kiesUit[floor(random(kiesUit.length))](dt)
+    }
   }
-  //@@@ ster? hartje? ...
 }
 
 // Shortcuts
@@ -669,7 +706,7 @@ function kopie(obj) {
 }
 
 // Zet een getal of tekst om in een functie die de waarde retourneert
-// (of een kleur, als optKleurEigenschap true is of op "kleur" eindigt)
+// (of een kleur/vorm, als naamEigenschap daarop eindigt)
 function echtEenFunctie(waarde, naamEigenschap = '') {
   const isKleur = naamEigenschap.endsWith("kleur");
   const isVorm = naamEigenschap.endsWith("vorm");
@@ -695,6 +732,7 @@ function echtEenGetal(n) {
   return typeof n === "number" ? n : 0;
 }
 
+// Start een onzichtbare YouTube video met het gegeven id zodat we muziek kunnen afspelen
 function muziek(id) {
   setTimeout(() => {
     document.getElementById("musicframe").src = `https://www.youtube.com/embed/${id}?autoplay=1`
