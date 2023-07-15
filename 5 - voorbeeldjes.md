@@ -66,6 +66,14 @@ wijzig("hoek", getal.golf(40, 90))
 
 <div style="clear:both"></div>
 
+### Zomervakantie
+
+<iframe style='float: right' src="https://coderdojo-leiden.github.io/demos-digitale-kunst/voorbeeld/zomervakantie/"></iframe>
+
+De zomervakantie-demo die je al eerder gezien hebt. <a target='_blank' href='voorbeeld/zomervakantie/demo.js'>Bekijk hier de code</a>.
+
+<div style="clear:both"></div>
+
 ### Nog veel meer mogelijkheden
 
 Experimenteer zelf verder! Als je echt alle mogelijkheden wilt weten: kijk in het [overzicht in de volgende stap](./6%20-%20meer%20mogelijkheden.html).

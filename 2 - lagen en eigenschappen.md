@@ -81,3 +81,17 @@ Alles staat nu nog stil, maar daar gaan we verandering in brengen, met [effecten
 <p style='font-size: 150%; font-weight: bold; text-align: right;'>
     <a href='./3%20-%20effecten.html'>Volgende stap <img style='margin: -0.4em 0.5em; float: right; width: 10%' src='images/arrow.png'></a>
 </p>
+
+<blockquote>
+<details>
+  <summary><u><b>TIP:</b> wil je liever meteen de zomervakantie-demo bekijken en veranderen? Klik hier!</u></summary>
+
+<p>In plaats van stap voor stap leren kun je ook in het diepe springen en zelf met de code van de zomervakantie-demo spelen:</p>
+
+<ul>
+<li><a target='_blank' href='voorbeeld/zomervakantie/'>Draai de demo</a></li>
+<li><a target='_blank' href='voorbeeld/zomervakantie/demo.js'>Bekijk de code</a> (kopieer/plak stukjes in je eigen demo!)</li>
+</ul>
+
+</details>
+</blockquote>
