@@ -146,12 +146,13 @@ Deze kleuren verandering niet met de tijd.
 | `kleur.tvi(20, 50, 50)`      | Een kleur opgebouwd uit tint (rood? blauw? etc.), verzadiging (is de kleur flets of helder?)<br>en intensiteit (is de kleur donker of licht?) |
 
 
-### Doorzichtigheid aanpassen
+### Doorzichtigheid / overgang
 
-| **Naam**                                             | **Beschrijving**                               |
-|:-----------------------------------------------------|:-----------------------------------------------|
-| `kleur.doorzichtig("rood", getal.golf(40, 10, 100))` | Golft tussen ondoorzichtig en doorzichtig rood |
-| `kleur.doorzichtig(20, getal.golf(40, 10, 100))`     | Golft tussen ondoorzichtig en doorzichtig geel |
+| **Naam**                                             | **Beschrijving**                                 |
+|:-----------------------------------------------------|:-------------------------------------------------|
+| `kleur.overgang(20, "rood", "groen")`                | Kleur verandert geleidelijk tussen rood en groen |
+| `kleur.doorzichtig("rood", getal.golf(40, 10, 100))` | Golft tussen ondoorzichtig en doorzichtig rood   |
+| `kleur.doorzichtig(20, getal.golf(40, 10, 100))`     | Golft tussen ondoorzichtig en doorzichtig geel   |
 
 
 
