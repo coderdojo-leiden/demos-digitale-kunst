@@ -2,7 +2,7 @@
 
 <blockquote>
 <details>
-  <summary><u><b>TIP:</b> zo zou je project er nu bijvoorbeeld uit kunnen zien</u></summary>
+  <summary><u><b>TIP:</b> klik hier om te zien hoe je project er nu bijvoorbeeld uit kan zien</u></summary>
 
 <p>(als jouw versie ietsje anders is: geen probleem, als je maar een `Vorm` laag hebt voor deze stap)</p>
 

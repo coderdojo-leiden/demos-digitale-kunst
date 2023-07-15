@@ -2,7 +2,7 @@
 
 <blockquote>
 <details>
-  <summary><u><b>TIP:</b> zo zou je project er nu uit moeten zien</u></summary>
+  <summary><u><b>TIP:</b> klik hier om te zien hoe je project er nu uit zou moeten zien</u></summary>
 
 <p>(andere kleuren, teksten of vormen zijn natuurlijk geen probleem)</p>
 
