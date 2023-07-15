@@ -113,7 +113,8 @@ wijzig("pad", pad.omhoog(200))
 
 
 // Lekker deuntje eronder en klaar!
-muziek('3EkGR2Y5QNY')
+if (location.search === "?muziek")
+    muziek('3EkGR2Y5QNY')
 
 
 // --------- HIER EINDIGT JE DEMO --------------
